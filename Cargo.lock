@@ -1602,15 +1602,16 @@ dependencies = [
 
 [[package]]
 name = "iced_exdevtools"
-version = "0.18.0"
+version = "0.19.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "93a7620f4e326463f15705b7c08214eb3aee17b3a90085bdfbb6d31651a1b18a"
+checksum = "b0d34d1c027d135037c34ece007cbfc5aa5c2be54595d2891589f24abafebf25"
 dependencies = [
  "iced_debug",
  "iced_devtools",
  "iced_program",
  "iced_widget",
  "log",
+ "winit-core",
 ]
 
 [[package]]
@@ -1652,9 +1653,9 @@ dependencies = [
 
 [[package]]
 name = "iced_layershell"
-version = "0.18.0"
+version = "0.19.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e9af23def8028c786e97b72dc3b596968ad23bca4faa865ec96a134ffe3d71ca"
+checksum = "51b59e8af02bf4c51db2ee5d130293e6e1e5ac4ae9f74a1e57990a19221aa0d5"
 dependencies = [
  "enumflags2",
  "futures",
@@ -1671,7 +1672,6 @@ dependencies = [
  "layershellev",
  "log",
  "mundy",
- "smol_str 0.2.2",
  "thiserror 2.0.18",
  "tracing",
  "window_clipboard",
@@ -1679,9 +1679,9 @@ dependencies = [
 
 [[package]]
 name = "iced_layershell_macros"
-version = "0.18.0"
+version = "0.19.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9297f036da65ba1e3abe6d4b69d3f3ace9311166f7e41ce1fccd088ed7998ccf"
+checksum = "99d35752ff73ef8eb5f15008e501d011aead655baab9a5689dcea40e42e3463e"
 dependencies = [
  "darling",
  "manyhow",
@@ -2034,9 +2034,9 @@ dependencies = [
 
 [[package]]
 name = "layershellev"
-version = "0.18.0"
+version = "0.19.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "aa93feb9ad2defd5a7420460a8491649cb81709d84cb3759135069624f8ee9a1"
+checksum = "69fbd3ced50d91a5a118e3e00f49c72040ea6b48b78b159a3936104fc2632925"
 dependencies = [
  "calloop 0.14.4",
  "calloop-wayland-source 0.4.1",
@@ -4577,9 +4577,9 @@ dependencies = [
 
 [[package]]
 name = "waycrate_xkbkeycode"
-version = "0.18.0"
+version = "0.19.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fd5f6c9aeba104eec76c6d84df2f859ee9e15e66daf4cda55a8bd61310a9c6fe"
+checksum = "e904c31025b16851793aa2e8eae3c1b4466af8345b45fb7e46ec61b05a4f9086"
 dependencies = [
  "calloop 0.14.4",
  "log",
