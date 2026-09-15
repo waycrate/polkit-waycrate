@@ -10,12 +10,13 @@ use iced::{
     Alignment, Length,
     widget::{Space, button, checkbox, column, combo_box, container, row, svg, text, text_input},
 };
-use iced_layershell::reexport::KeyboardInteractivity;
-use iced_layershell::reexport::OutputOption;
-use iced_layershell::settings::LayerShellSettings;
-use iced_layershell::settings::StartMode;
-use iced_layershell::to_layer_message;
-use iced_layershell::{
+use iced_exwlshell::reexport::KeyboardInteractivity;
+use iced_exwlshell::reexport::OutputOption;
+use iced_exwlshell::settings::LayerShellSettings;
+use iced_exwlshell::settings::LayerSize;
+use iced_exwlshell::settings::StartMode;
+use iced_exwlshell::to_layer_message;
+use iced_exwlshell::{
     daemon,
     reexport::NewLayerShellSettings,
     reexport::{Anchor, Layer},
@@ -147,7 +148,7 @@ fn update(dialog: &mut PolkitDialog, message: Message) -> Task<Message> {
             dialog.message = message;
             Task::done(Message::NewLayerShell {
                 settings: NewLayerShellSettings {
-                    size: None,
+                    size: LayerSize::FILL,
                     exclusive_zone: Some(-1),
                     anchor: Anchor::all(),
                     layer: Layer::Overlay,
@@ -325,7 +326,7 @@ fn polkit_subscription() -> iced::Subscription<Message> {
     })
 }
 
-fn main() -> iced_layershell::Result {
+fn main() -> iced_exwlshell::Result {
     use tracing_subscriber::filter::LevelFilter;
     use tracing_subscriber::fmt::time::LocalTime;
     tracing_subscriber::fmt()
