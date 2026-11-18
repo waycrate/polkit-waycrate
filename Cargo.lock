@@ -80,7 +80,7 @@ dependencies = [
  "ndk-context",
  "ndk-sys",
  "num_enum",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
 ]
 
 [[package]]
@@ -228,7 +228,7 @@ dependencies = [
  "futures-lite",
  "parking",
  "polling",
- "rustix 1.1.4",
+ "rustix 1.1.6",
  "slab",
  "windows-sys 0.61.2",
 ]
@@ -270,7 +270,7 @@ dependencies = [
  "cfg-if",
  "event-listener",
  "futures-lite",
- "rustix 1.1.4",
+ "rustix 1.1.6",
 ]
 
 [[package]]
@@ -296,7 +296,7 @@ dependencies = [
  "cfg-if",
  "futures-core",
  "futures-io",
- "rustix 1.1.4",
+ "rustix 1.1.6",
  "signal-hook-registry",
  "slab",
  "windows-sys 0.61.2",
@@ -346,7 +346,7 @@ dependencies = [
  "num-traits",
  "pastey",
  "rayon",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
  "v_frame",
  "y4m",
 ]
@@ -547,7 +547,7 @@ checksum = "4dbf9978365bac10f54d1d4b04f7ce4427e51f71d61f2fe15e3fed5166474df7"
 dependencies = [
  "bitflags 2.13.2",
  "polling",
- "rustix 1.1.4",
+ "rustix 1.1.6",
  "slab",
  "tracing",
 ]
@@ -571,7 +571,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "138efcf0940a02ebf0cc8d1eff41a1682a46b431630f4c52450d6265876021fa"
 dependencies = [
  "calloop 0.14.4",
- "rustix 1.1.4",
+ "rustix 1.1.6",
  "wayland-backend",
  "wayland-client",
 ]
@@ -635,7 +635,7 @@ version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bd63e33452ffdafd39924c4f05a5dd1e94db646c779c6bd59148a3d95fff5ad4"
 dependencies = [
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
  "x11rb",
 ]
 
@@ -820,16 +820,6 @@ dependencies = [
  "lru",
  "rustc-hash 2.1.3",
  "wgpu",
-]
-
-[[package]]
-name = "cstr-argument"
-version = "0.1.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b6bd9c8e659a473bce955ae5c35b116af38af11a7acb0b480e01f3ed348aeb40"
-dependencies = [
- "cfg-if",
- "memchr",
 ]
 
 [[package]]
@@ -1089,9 +1079,9 @@ dependencies = [
 
 [[package]]
 name = "exwlshellev"
-version = "0.20.1"
+version = "0.21.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b2c3b9dab8cede8cf7432bf176bba7acdf95b7362d314ef2748b1014154843c7"
+checksum = "0f546ff4f979f0e6ada7c629e650bafa450f17f2ea77a4c7d2b4f0987451ef13"
 dependencies = [
  "calloop 0.14.4",
  "calloop-wayland-source 0.4.1",
@@ -1099,7 +1089,7 @@ dependencies = [
  "raw-window-handle",
  "smithay-client-toolkit 0.21.1",
  "tempfile",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
  "waycrate_xkbkeycode",
  "wayland-backend",
  "wayland-client",
@@ -1355,7 +1345,7 @@ version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1bd49230192a3797a9a4d6abe9b3eed6f7fa4c8a8a4947977c6f80025f92cbd8"
 dependencies = [
- "rustix 1.1.4",
+ "rustix 1.1.6",
  "windows-link",
 ]
 
@@ -1582,7 +1572,7 @@ dependencies = [
  "iced_widget",
  "iced_winit",
  "image",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
 ]
 
 [[package]]
@@ -1599,7 +1589,7 @@ dependencies = [
  "num-traits",
  "rustc-hash 2.1.3",
  "smol_str 0.2.2",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
  "web-time",
 ]
 
@@ -1628,9 +1618,9 @@ dependencies = [
 
 [[package]]
 name = "iced_exdevtools"
-version = "0.20.1"
+version = "0.21.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "36f27766216f393e15529e366e6e747604d8241e48d44a9a72f42ff06e7de8d4"
+checksum = "eb41fafa13088c35d76b8893254f1746a100299ecd4bad3319b6839591314e11"
 dependencies = [
  "iced_debug",
  "iced_devtools",
@@ -1642,9 +1632,9 @@ dependencies = [
 
 [[package]]
 name = "iced_exwlshell"
-version = "0.20.1"
+version = "0.21.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ef2435294d7d255c723a5db916c121413116e34fd5fcbf4250f0d39e28b19768"
+checksum = "6e6d1a09bfec923b3e34ae898982aca394367629ba438f5556793a029a28dc3b"
 dependencies = [
  "enumflags2",
  "exwlshellev",
@@ -1662,16 +1652,16 @@ dependencies = [
  "iced_wayland_subscriber",
  "log",
  "mundy",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
  "tracing",
  "window_clipboard",
 ]
 
 [[package]]
 name = "iced_exwlshell_macros"
-version = "0.20.1"
+version = "0.21.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "33f0a8ceb6fb0f340e32cbe42c11f1c7d0a3f8131d271c598276ad8cf602d97d"
+checksum = "bb0c84263892840786f0e0be7874a2d9c2a50c80befdc7cf48ba72afc896381e"
 dependencies = [
  "darling",
  "manyhow",
@@ -1713,7 +1703,7 @@ dependencies = [
  "lyon_path",
  "raw-window-handle",
  "rustc-hash 2.1.3",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
  "unicode-segmentation",
 ]
 
@@ -1737,7 +1727,7 @@ dependencies = [
  "iced_tiny_skia",
  "iced_wgpu",
  "log",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
 ]
 
 [[package]]
@@ -1750,7 +1740,7 @@ dependencies = [
  "iced_core",
  "iced_futures",
  "raw-window-handle",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
 ]
 
 [[package]]
@@ -1773,16 +1763,17 @@ dependencies = [
 
 [[package]]
 name = "iced_wayland_subscriber"
-version = "0.20.1"
+version = "0.21.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5c0cd54cedfab3230ff5487cbeec868c2afc552def98bf2ebb469af1b6f84a39"
+checksum = "f99c1819cb562e9a74fd077691f50b48a9c1cecd22407136c4a8282a2d0b02f7"
 dependencies = [
+ "exwlshellev",
  "futures",
  "iced_core",
  "iced_futures",
- "rustix 1.1.4",
+ "rustix 1.1.6",
  "smithay-client-toolkit 0.21.1",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
  "wayland-client",
 ]
 
@@ -1804,7 +1795,7 @@ dependencies = [
  "lyon",
  "resvg",
  "rustc-hash 2.1.3",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
  "wgpu",
 ]
 
@@ -1818,7 +1809,7 @@ dependencies = [
  "log",
  "num-traits",
  "rustc-hash 2.1.3",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
  "unicode-segmentation",
 ]
 
@@ -1833,7 +1824,7 @@ dependencies = [
  "log",
  "mundy",
  "rustc-hash 2.1.3",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
  "tracing",
  "wasm-bindgen-futures",
  "web-sys",
@@ -2039,7 +2030,7 @@ dependencies = [
  "jni-sys 0.4.1",
  "log",
  "simd_cesu8",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
  "walkdir",
  "windows-link",
 ]
@@ -2221,9 +2212,9 @@ dependencies = [
 
 [[package]]
 name = "libsystemd-sys"
-version = "0.9.4"
+version = "0.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "976306de183e6046819ef6505888d00996214766a3f4660a2ed5761c84a20aed"
+checksum = "4a685c42724c1b3f80ef38bcde1a3b63812cf3541ae16aa2fe689aba0f14f244"
 dependencies = [
  "build-env",
  "cfg-if",
@@ -2464,6 +2455,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "mio"
+version = "1.2.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1788edb87fdc09c7e26304471e2f5be8cdefb1b6930d6e3985fc02ff53bf86ee"
+dependencies = [
+ "libc",
+ "wasi",
+ "windows-sys 0.61.2",
+]
+
+[[package]]
 name = "moxcms"
 version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2496,7 +2498,7 @@ dependencies = [
  "wasm-bindgen-futures",
  "web-sys",
  "windows 0.62.2",
- "zbus",
+ "zbus 5.19.0",
 ]
 
 [[package]]
@@ -2527,7 +2529,7 @@ dependencies = [
  "once_cell",
  "rustc-hash 1.1.0",
  "spirv",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
  "unicode-ident",
 ]
 
@@ -3272,7 +3274,7 @@ dependencies = [
  "concurrent-queue",
  "hermit-abi",
  "pin-project-lite",
- "rustix 1.1.4",
+ "rustix 1.1.6",
  "windows-sys 0.61.2",
 ]
 
@@ -3514,7 +3516,7 @@ dependencies = [
  "rand",
  "rand_chacha",
  "simd_helpers",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
  "v_frame",
  "wasm-bindgen",
 ]
@@ -3715,9 +3717,9 @@ dependencies = [
 
 [[package]]
 name = "rustix"
-version = "1.1.4"
+version = "1.1.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b6fe4565b9518b83ef4f91bb47ce29620ca828bd32cb7e408f0062e9930ba190"
+checksum = "e5e76742e5294153d4dde1207dbec5bdd81eef6fabdc0d2118babadabfd858aa"
 dependencies = [
  "bitflags 2.13.2",
  "errno",
@@ -3987,8 +3989,8 @@ dependencies = [
  "libc",
  "log",
  "memmap2",
- "rustix 1.1.4",
- "thiserror 2.0.20",
+ "rustix 1.1.6",
+ "thiserror 2.0.21",
  "wayland-backend",
  "wayland-client",
  "wayland-csd-frame",
@@ -4015,8 +4017,8 @@ dependencies = [
  "log",
  "memmap2",
  "pkg-config",
- "rustix 1.1.4",
- "thiserror 2.0.20",
+ "rustix 1.1.6",
+ "thiserror 2.0.21",
  "wayland-client",
  "wayland-csd-frame",
  "wayland-cursor",
@@ -4077,6 +4079,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "socket2"
+version = "0.6.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c3d1e2c7f27f8d4cb10542a02c49005dbd6e93095799d6f3be745fae9f8fedd4"
+dependencies = [
+ "libc",
+ "windows-sys 0.61.2",
+]
+
+[[package]]
 name = "softbuffer"
 version = "0.4.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4095,7 +4107,7 @@ dependencies = [
  "objc2-quartz-core 0.3.2",
  "raw-window-handle",
  "redox_syscall 0.5.18",
- "rustix 1.1.4",
+ "rustix 1.1.6",
  "tiny-xlib",
  "tracing",
  "wasm-bindgen",
@@ -4214,11 +4226,10 @@ dependencies = [
 
 [[package]]
 name = "systemd"
-version = "0.10.1"
+version = "0.11.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "01e9d1976a15b86245def55d20d52b5818e1a1e81aa030b6a608d3ce57709423"
+checksum = "4f746dc1df122b4fd71667e8eef21b5532a2b80f82687b74d3b0f7fbd6c8e95a"
 dependencies = [
- "cstr-argument",
  "foreign-types",
  "libc",
  "libsystemd-sys",
@@ -4236,7 +4247,7 @@ dependencies = [
  "fastrand",
  "getrandom 0.4.3",
  "once_cell",
- "rustix 1.1.4",
+ "rustix 1.1.6",
  "windows-sys 0.61.2",
 ]
 
@@ -4260,11 +4271,11 @@ dependencies = [
 
 [[package]]
 name = "thiserror"
-version = "2.0.20"
+version = "2.0.21"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ec86235f5fcc2a73650310756d2ac5b138a5780bbbdfae3eeccec992c435ba4f"
+checksum = "09e52cb86a36cede5cb101bf8908837b3e4c6e5e59fe7fd85c23fb56200d189e"
 dependencies = [
- "thiserror-impl 2.0.20",
+ "thiserror-impl 2.0.21",
 ]
 
 [[package]]
@@ -4280,9 +4291,9 @@ dependencies = [
 
 [[package]]
 name = "thiserror-impl"
-version = "2.0.20"
+version = "2.0.21"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bc04cd3e1236dd4a98afca4569f2deb3f120e5422a4023be2cb683f8486292af"
+checksum = "fe5197923287db20a58125f0bc85c062f7f2c892de97b18c356f9efb14b28524"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -4398,6 +4409,22 @@ name = "tinyvec"
 version = "1.13.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fd3ca314f692efd6c868f8408f53fe444634a845f96c028b97d35f6a1f79f0ee"
+
+[[package]]
+name = "tokio"
+version = "1.54.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b52fd3255258d26fac7264ab5a76b53c13367136dc011d3d6ad4f8ed070396a3"
+dependencies = [
+ "bytes",
+ "libc",
+ "mio",
+ "pin-project-lite",
+ "signal-hook-registry",
+ "socket2",
+ "tracing",
+ "windows-sys 0.61.2",
+]
 
 [[package]]
 name = "toml_datetime"
@@ -4668,6 +4695,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "wasi"
+version = "0.11.1+wasi-snapshot-preview1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ccf3ec651a847eb01de73ccad15eb7d99f80485de043efb2f370cd654f4ea44b"
+
+[[package]]
 name = "wasip2"
 version = "1.0.4+wasi-0.2.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4747,9 +4780,9 @@ dependencies = [
 
 [[package]]
 name = "waycrate_xkbkeycode"
-version = "0.20.1"
+version = "0.21.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b149316a2238def05b33ef3fdd2b3d8d795892a750041c98e1a5fd1443dbc0fe"
+checksum = "55487d90b6a05ed7b13bccd71c028d97b0e5466ff6ed6b9f86ae68ee8dd91ea3"
 dependencies = [
  "calloop 0.14.4",
  "log",
@@ -4769,7 +4802,7 @@ checksum = "38a91b4eaddff87b1cd1074985e3713da4af2c49742d1b356b2c01670a67a078"
 dependencies = [
  "cc",
  "downcast-rs",
- "rustix 1.1.4",
+ "rustix 1.1.6",
  "scoped-tls",
  "smallvec",
  "wayland-sys",
@@ -4782,7 +4815,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e3c36a0f861ad76d0901f2800b46321410d9f73f2ea88aac0650d86c32688073"
 dependencies = [
  "bitflags 2.13.2",
- "rustix 1.1.4",
+ "rustix 1.1.6",
  "wayland-backend",
  "wayland-scanner",
 ]
@@ -4804,7 +4837,7 @@ version = "0.31.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4a52d18780be9b1314328a3de5f930b73d2200112e3849ca6cb11822793fb34d"
 dependencies = [
- "rustix 1.1.4",
+ "rustix 1.1.6",
  "wayland-client",
  "xcursor",
 ]
@@ -4988,7 +5021,7 @@ dependencies = [
  "raw-window-handle",
  "rustc-hash 1.1.0",
  "smallvec",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
  "wgpu-core-deps-apple",
  "wgpu-core-deps-emscripten",
  "wgpu-core-deps-windows-linux-android",
@@ -5064,7 +5097,7 @@ dependencies = [
  "raw-window-handle",
  "renderdoc-sys",
  "smallvec",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
  "wasm-bindgen",
  "web-sys",
  "wgpu-types",
@@ -5082,7 +5115,7 @@ dependencies = [
  "bytemuck",
  "js-sys",
  "log",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
  "web-sys",
 ]
 
@@ -5106,7 +5139,7 @@ dependencies = [
  "clipboard_wayland",
  "clipboard_x11",
  "raw-window-handle",
- "thiserror 2.0.20",
+ "thiserror 2.0.21",
 ]
 
 [[package]]
@@ -5498,7 +5531,7 @@ dependencies = [
  "libc",
  "libloading",
  "once_cell",
- "rustix 1.1.4",
+ "rustix 1.1.6",
  "x11rb-protocol",
 ]
 
@@ -5622,7 +5655,7 @@ dependencies = [
  "hex",
  "libc",
  "ordered-stream",
- "rustix 1.1.4",
+ "rustix 1.1.6",
  "serde",
  "serde_repr",
  "tracing",
@@ -5630,24 +5663,52 @@ dependencies = [
  "uuid",
  "windows-sys 0.61.2",
  "winnow",
- "zbus_macros",
+ "zbus_macros 5.19.0",
  "zbus_names",
  "zvariant",
 ]
 
 [[package]]
-name = "zbus-polkit-agent"
-version = "0.4.3"
+name = "zbus"
+version = "6.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "952b9a48f63decd9065bb50405c2cfb99ab3b7e244fd2584190d586aa173be34"
+checksum = "6b4aae740b23927ceabed962431abab2cdefb9f7f885e5bbab062da09bf580e4"
 dependencies = [
- "libsystemd-sys",
+ "async-trait",
+ "bitflags 2.13.2",
+ "endi",
+ "futures-core",
+ "hex",
+ "libc",
+ "ordered-stream",
+ "rustix 1.1.6",
+ "serde",
+ "serde_repr",
+ "socket2",
+ "tokio",
+ "tracing",
+ "uds_windows",
+ "uuid",
+ "windows-sys 0.61.2",
+ "winnow",
+ "zbus_macros 6.3.0",
+ "zbus_utils",
+ "zcheapstr",
+ "zruntime",
+]
+
+[[package]]
+name = "zbus-polkit-agent"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "850ec3d98997e846f7f50214d61f9d9c40493c6285dd5d7af3cb0b2bad2f133c"
+dependencies = [
+ "bitflags 2.13.2",
  "nix",
  "serde",
  "systemd",
- "thiserror 2.0.20",
- "zbus",
- "zbus_polkit",
+ "thiserror 2.0.21",
+ "zbus 6.3.0",
 ]
 
 [[package]]
@@ -5666,6 +5727,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "zbus_macros"
+version = "6.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "37c9dd4beaf145c16fcb2902862f50da86e54aed13dd368ddf64a1d17e6b8529"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 3.0.5",
+ "zbus_utils",
+]
+
+[[package]]
 name = "zbus_names"
 version = "4.3.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5677,16 +5750,16 @@ dependencies = [
 ]
 
 [[package]]
-name = "zbus_polkit"
-version = "5.1.0"
+name = "zbus_utils"
+version = "6.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "283d50dac36a7fee0d9c2e6b9c71253326c1f863a9d350342d338637aa3019ae"
+checksum = "af55e52da295311b368c45bcae221f020e28e97a2420360170ce389218e76ec7"
 dependencies = [
- "enumflags2",
+ "proc-macro2",
+ "quote",
  "serde",
- "serde_repr",
- "static_assertions",
- "zbus",
+ "syn 3.0.5",
+ "winnow",
 ]
 
 [[package]]
@@ -5783,6 +5856,20 @@ name = "zlib-rs"
 version = "0.6.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b268e58e7c693d7c271f93ffc4ba3b380412554231c85bf61ca7af91042a4112"
+
+[[package]]
+name = "zruntime"
+version = "0.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ce6a55d4f521760475a30f7b96779508fe8c40dc834478709454dd1d5f0ebc72"
+dependencies = [
+ "futures-core",
+ "futures-io",
+ "rustix 1.1.6",
+ "socket2",
+ "tracing",
+ "windows-sys 0.61.2",
+]
 
 [[package]]
 name = "zune-core"
